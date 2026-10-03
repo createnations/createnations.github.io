@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How we created the Create: Nations SMP</title>
+<style>
+:root{
+  --bg:#f2f4f7; --ink:#14213d; --muted:#4c5a70; --rail:#3a6ea5; --mark:#e0a800; --card:#ffffff; --line:#d3d9e2;
+  --serif:"Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1624;--ink:#e8edf5;--muted:#9aa8bf;--rail:#6fa3d8;--mark:#f0c23a;--card:#18213a;--line:#2b3753}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans)}
+main{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+h1{font:700 clamp(2rem,6vw,3.2rem)/1.1 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
+.lede{font:italic 1.2rem/1.5 var(--serif);color:var(--muted);margin:0 0 36px}
+h2{font:700 1.5rem var(--serif);margin:48px 0 10px}
+p{margin:0 0 14px;max-width:66ch}
+.log{position:relative;margin:28px 0 0;padding-left:0;list-style:none}
+.log::before{content:"";position:absolute;left:92px;top:6px;bottom:6px;width:2px;background:var(--rail)}
+.log li{position:relative;display:grid;grid-template-columns:80px 1fr;gap:0 36px;margin-bottom:34px}
+.log li::before{content:"";position:absolute;left:86px;top:9px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--rail)}
+.time{font:700 1.05rem/1.4 var(--serif);text-align:right;padding-top:2px}
+.log h3{font:700 1.25rem var(--serif);margin:0 0 8px}
+.note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--mark);border-radius:4px;padding:10px 14px;margin:12px 0;font-size:.97rem}
+@media (max-width:560px){
+  .log::before{left:7px}
+  .log li{grid-template-columns:1fr;padding-left:32px;gap:2px}
+  .log li::before{left:0}
+  .time{text-align:left}
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>How we created the Create: Nations SMP</h1>
+  <p class="lede">Building the world was the fun part. Keeping it running took more work than we expected.</p>
+
+  <p>The Create: Nations SMP started as an idea for a server where players build, trade and compete with the Create mod. Turning that idea into a real, stable server came down to three big struggles.</p>
+
+  <ol class="log">
+    <li>
+      <div class="time">Hosting</div>
+      <div>
+        <h3>Finding a good host</h3>
+        <p>A modded server needs real resources. Cheap hosts lagged, crashed or couldn't handle the mods, and every bad choice meant lost time and frustrated players. Finding a host with solid performance and reliable uptime took a lot of trial and error.</p>
+        <div class="note">A server is only as good as its host. Lag and downtime drive players away fast.</div>
+      </div>
+    </li>
+    <li>
+      <div class="time">Cost</div>
+      <div>
+        <h3>Paying for the server every month</h3>
+        <p>Good hosting isn't free, and the bill comes around every month whether the server is busy or not. Covering that cost while the community was still small was a constant worry, and it shaped many of our decisions.</p>
+        <div class="note">The monthly bill never takes a break, even when the player count does.</div>
+      </div>
+    </li>
+    <li>
+      <div class="time">Members</div>
+      <div>
+        <h3>Getting enough players</h3>
+        <p>An SMP needs people to feel alive. Empty towns and quiet chats make it hard to keep the few members you have, and hard to attract new ones. Getting the word out and building a community that wanted to stay was the slowest part of all.</p>
+        <div class="note">Hosting and cost matter little without a community worth logging in for.</div>
+      </div>
+    </li>
+  </ol>
+
+  <h2>Where we are now</h2>
+  <p>None of this was easy, but each problem pushed us to improve the server. Create: Nations SMP exists because we kept working through the hosting, the bills and the search for players.</p>
+</main>
+</body>
+</html>
